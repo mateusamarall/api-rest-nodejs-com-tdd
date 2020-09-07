@@ -1,0 +1,15 @@
+{
+  "name": "curso-nodejs-com-tdd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src  --ext .js",
+    "lint:fix": "eslint ./src --ext .js --fix"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
