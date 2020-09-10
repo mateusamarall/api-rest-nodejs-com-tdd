@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:functional": "jest --projects ./test --runInBand",
     "test:unit": "jest",
+    "secure-mode": "jest --watch --verbose=true",
     "lint": "eslint ./src ./test --ext .js",
     "lint:fix": "eslint ./src ./test --ext .js --fix"
   },
