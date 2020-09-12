@@ -9,4 +9,12 @@ describe('Listagem de usuario', () => {
       expect(res.body).toHaveLength(1);
       expect(res.body[0]).toHaveProperty('name', 'mateus');
     }));
+
+  it('deve inserir usuário com sucesso', () => {
+    request(app).post('/users').send({ name: 'joao', email: 'joao@gmail.com' })
+      .then((res) => {
+        expect(res.status).toBe(201);
+        expect(res.body.name).toBe('joao');
+      });
+  });
 });
